@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "coverage": "c8 npm run test",
+    "lint": "standard"
   },
   "author": "Alan Shaw",
   "license": "Apache-2.0 OR MIT",
@@ -17,7 +19,9 @@
   "devDependencies": {
     "@ipld/car": "^3.2.3",
     "ava": "^3.15.0",
+    "c8": "^7.11.0",
     "ipfs-car": "^0.6.1",
+    "standard": "^16.0.4",
     "uint8arrays": "^3.0.0"
   },
   "types": "./index.d.ts",

@@ -1,5 +1,9 @@
 # lecarfy
 
+[![Build](https://github.com/alanshaw/lecarfy/actions/workflows/main.yml/badge.svg)](https://github.com/alanshaw/lecarfy/actions/workflows/main.yml)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/lecarfy)](https://bundlephobia.com/package/lecarfy)
+
 A CAR file creator/formatter that creates CAR files with leaf blocks appearing first, in depth first traversal order.
 
 Given the following DAG:
