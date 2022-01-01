@@ -1,6 +1,6 @@
 {
   "name": "lecarfy",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A CAR file creator/formatter that creates CAR files with leaf blocks appearing first, in depth first traversal order.",
   "main": "index.js",
   "type": "module",
