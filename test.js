@@ -14,7 +14,6 @@ import { format } from './index.js'
     const [root] = await car.getRoots()
     const fcar = format(root, car)
     const blockBytes = await readBytes(root, fcar)
-    console.log({ blockBytes, fileBytes: new Uint8Array(fileBytes) })
     t.true(uint8arrays.equals(blockBytes, fileBytes))
   })
 })

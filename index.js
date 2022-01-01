@@ -19,12 +19,9 @@ export function format (root, blocks) {
         const cid = cids.shift()
         if (!cid) break
         const block = await decodeBlock(cid, blocks)
-        let hasLinks = false
-        for (const [, cid] of block.links()) {
-          hasLinks = true
-          cids.unshift(cid)
-        }
-        if (hasLinks) {
+        const links = Array.from(block.links()).map(([, cid]) => cid)
+        cids.unshift(...links)
+        if (links.length) {
           nonLeafBlocks.push(block)
         } else {
           await writer.put(block)
