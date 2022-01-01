@@ -19,5 +19,21 @@
     "ava": "^3.15.0",
     "ipfs-car": "^0.6.1",
     "uint8arrays": "^3.0.0"
-  }
+  },
+  "types": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanshaw/lecarfy.git"
+  },
+  "keywords": [
+    "CAR",
+    "DAG",
+    "formatter",
+    "IPFS",
+    "IPLD"
+  ],
+  "bugs": {
+    "url": "https://github.com/alanshaw/lecarfy/issues"
+  },
+  "homepage": "https://github.com/alanshaw/lecarfy#readme"
 }

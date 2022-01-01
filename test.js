@@ -4,6 +4,8 @@ import fs from 'fs'
 import * as uint8arrays from 'uint8arrays'
 import { format } from './index.js'
 
+// The DAGs in these fixtures have been created with `ipfs add --cid-version=1`
+// which means they have raw leaf nodes.
 ['small.jpg', 'medium.jpg', 'large.mp4'].forEach(filename => {
   test(`should format ${filename}`, async t => {
     const fileBytes = await fs.promises.readFile(`./fixtures/${filename}`)
