@@ -9,22 +9,20 @@ A CAR file creator/formatter that creates CAR files with leaf blocks appearing f
 Given the following DAG:
 
 ```
-              r
-              |
-      +-------1-------+
+      +-------R-------+
       |               |
-  +---2---+       +---9---+
+  +---1---+       +---8---+
   |       |       |       |
-+-3-+   +-6-+   +-a-+   +-d-+
++-2-+   +-5-+   +-9-+   +-c-+
 |   |   |   |   |   |   |   |
-4   5   7   8   b   c   e   f
+3   4   6   7   a   b   d   e
 ```
 
 This library will create a CAR with blocks arranged in the following order:
 
-4,5,7,8,b,c,e,f,r,1,2,9
+3,4,6,7,a,b,d,e,R,1,2,5,8,9,c
 
-When the root block (r) is encountered there are no more leaves in the DAG.
+When the root block (R) is encountered there are no more leaves in the DAG.
 
 ## Install
 
